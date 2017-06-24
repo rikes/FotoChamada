@@ -200,7 +200,7 @@ namespace FotoChamada
         private async Task<FaceRectangle[]> UploadAndDetectFaces(string imageFilePath)
         {
             try
-            {
+            { 
                 Uri uri = new Uri(imageFilePath);
                 output.Text = "Uri: " + String.Format("{0}", uri.AbsolutePath);
                 StorageFile storageFile = await StorageFile.GetFileFromApplicationUriAsync(uri);
