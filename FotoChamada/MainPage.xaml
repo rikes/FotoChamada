@@ -7,7 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="450" Margin="65,180,0,0" VerticalAlignment="Top" Width="666" Grid.RowSpan="2"/>
+        <Button x:Name="button" Content="Take a photo" HorizontalAlignment="Left" Margin="60,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.295,0.438" Click="take_photo" Grid.RowSpan="2"/>
+        <TextBox x:Name="output"  HorizontalAlignment="Left" Margin="731,180,0,0" TextWrapping="Wrap" Text="Informações sobre a foto" VerticalAlignment="Top" Height="450" Width="305" Grid.RowSpan="2"/>
+        <Button x:Name="getEmotion" Content="Check Emotion" HorizontalAlignment="Left" Margin="515,104,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Click="getEmotion_Click"/>
+        <Button x:Name="getLocalPhoto" Content="Carregar nova foto....." HorizontalAlignment="Left" Margin="90,660,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="545" Height="35" Click="getPhotoLocal_Click" BorderThickness="3" RequestedTheme="Light" FontSize="18" FontWeight="Bold"/>
+        
+        <TextBox x:Name="debug" HorizontalAlignment="Left" Margin="785,660,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="Degub: " VerticalAlignment="Top"/>
     </Grid>
 </Page>
