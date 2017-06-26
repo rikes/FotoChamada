@@ -5,6 +5,3 @@ install:
 branches:
   only:
   - master
-script:
- - cd ClientLibrary
- - dotnet restore && dotnet build
