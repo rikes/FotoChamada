@@ -1,7 +1,2 @@
 language: csharp
 solution: FotoChamada.sln
-install:
-- nuget restore FotoChamada.sln
-branches:
-  only:
-  - master
