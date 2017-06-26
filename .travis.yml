@@ -1,12 +1,10 @@
-language: c#
+language: csharp
 solution: FotoChamada.sln
 install:
 - nuget restore FotoChamada.sln
 branches:
   only:
   - master
-addons:
-  sonarqube: true
 script:
-- mvn test
-- mvn clean install sonar:sonar
+ - cd ClientLibrary
+ - dotnet restore && dotnet build
