@@ -1,1 +1,0 @@
-c:\users\henri\documents\visual studio 2015\Projects\FotoChamada\FotoChamada\FotoChamada.csproj;x86
